@@ -1,0 +1,99 @@
+body {
+    font-family: "Poppins", sans-serif;
+    background: #000;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    padding: 20px;
+    display: flex;
+    /*flex-direction: column;*/
+    gap: 12px;
+    max-width: 320px;
+}
+
+.chatbox {
+    margin: auto;
+    max-width: 400px;
+}
+.chatbox ul{
+    border-radius: 20px;
+    height: 420px;
+    background: #eeeeee;
+    list-style-type: none;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.chatbox ul .outgoing {
+    display: flex;
+    gap: 20px;
+    justify-content: start;
+    align-content: center;
+    align-items: flex-end;
+
+}
+.chatbox ul .outgoing span {
+    background: #2144f3;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+    border-radius: 8px;
+}
+.chatbox ul p {
+    margin: 0;
+}
+
+.chatbox ul .outgoing p {
+    padding: 12px 20px;
+    background: #2144f3;
+    border-radius: 16px 16px 16px 0;
+}
+
+.chatbox ul .incoming {
+    display: flex;
+    gap: 20px;
+    justify-content: end;
+    align-content: center;
+    align-items: center;
+}
+
+.chatbox ul .incoming p{
+    padding: 12px 20px;
+    background: #fff;
+    color: #2144f3;
+    border-radius: 16px 16px 0 16px;
+}
+
+.chat-input {
+    padding: 12px 20px;
+    background: #eeeeee;
+    border-radius: 20px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-content: center;
+}
+
+.chat-input textarea {
+    border: none;
+    outline: none;
+    width: 100%;
+    color: #000;
+    background: #eeeeee;
+}
+
+.chat-input span {
+    color: #2196f3;
+    margin-top: auto;
+    margin-bottom: auto;
+    visibility: hidden;
+}
+
+.chat-input textarea:valid ~ span {
+    visibility: visible;
+}

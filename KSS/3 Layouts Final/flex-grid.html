@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="css/flex-grid.css">
+<!--    <link rel="stylesheet" href="css/input.css">-->
+    <title>KSS Layouts</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <p>Tech Brew</p>
+            <div class="mobile dropdown">
+                <button class="menu material-symbols-outlined">menu</button>
+                <div class="menu-content">
+                    <ul>
+                        <li>Discover</li>
+                        <li>About Us</li>
+                        <li>Services</li>
+                        <li>Mugs</li>
+                        <li>T-Shirts</li>
+                        <li>Coffee Blends</li>
+                        <li>Machines</li>
+                    </ul>
+                </div>
+            </div>
+            <ul class="desktop">
+                <li>Discover</li>
+                <li>About Us</li>
+                <li>Services</li>
+                <li class="dropdown">
+                    <button type="button">
+                        <span>Products</span>
+                        <span class="material-symbols-outlined">expand_more</span>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="#">Mugs</a>
+                        <a href="#">T-Shirts</a>
+                        <a href="#">Coffee Blends</a>
+                        <span class="divider"></span>
+                        <a href="#">Machines</a>
+                    </div>
+                </li>
+            </ul>
+            <div class="desktop">
+<!--                <button class="btn btn-dark-outlined" type="button">Learn More</button>-->
+                <button class="btn btn-dark-outlined" type="button">Shop</button>
+<!--                <button class="btn btn-dark" type="button">Shop</button>-->
+                <div>
+                    <input type="checkbox" id="toggle">
+                    <label for="toggle"></label>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section id="hero" class="flex max-h">
+        <div>
+            <div>
+                <h1>Unlock Your Potential <br /> - One Cup of Focus at a Time.</h1>
+                <p>Awakens Senses, Sharpens Mind, Energizes You.</p>
+                <div>
+                    <button class="btn btn-dark" type="button">Shop</button>
+                    <button class="btn btn-accent-outlined" type="button">Learn More</button>
+                </div>
+            </div>
+            <div>
+                <img src="./assets/as-1.png" alt="coffee-mug">
+            </div>
+        </div>
+    </section>
+    <section id="services">
+        <div class="heading">
+            <h2>Awaken Your Genius</h2>
+            <img src="./assets/coffee-seed.svg" alt="coffee-seed">
+        </div>
+        <p>- One Cup of Focus at a Time.</p>
+        <div class="grid">
+            <div class="card">
+                <img src="./assets/as-1.png" alt="coffee-seed">
+                <p>Quality</p>
+            </div>
+            <div class="card">
+                <img src="./assets/as-2.png" alt="coffee-seed">
+                <p>Comfort</p>
+            </div>
+            <div class="card">
+                <img src="./assets/as-3.png" alt="coffee-seed">
+                <p>Focus</p>
+            </div>
+            <div class="card">
+                <img src="./assets/as-4.png" alt="coffee-seed">
+                <p>Productivity</p>
+            </div>
+            <div class="card">
+                <img src="./assets/as-5.png" alt="coffee-seed">
+                <p>Productivity</p>
+            </div>
+        </div>
+    </section>
+    <section id="newsletter">
+        <div>
+            <div>
+                <img src="./assets/as-6.png" alt="coffee-mug" width="680px" height="680px">
+            </div>
+            <div>
+                <h1>Stay in touch <br /> - Sips and Stories in Your Inbox</h1>
+                <p>Subscribe to our Newsletter</p>
+                <div class="custom-input-wrapper">
+                    <div class="custom-input">
+                        <input required type="email" placeholder="Enter your email address.">
+                        <span class="material-symbols-outlined">check</span>
+                    </div>
+                    <button class="btn btn-dark" type="button">Subscribe</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer></footer>
+</body>
+</html>

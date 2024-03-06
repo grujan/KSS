@@ -1,0 +1,37 @@
+:root {
+    --background: #000;
+    --text: #fff;
+}
+
+body {
+    font-family: "Ubuntu", sans-serif;
+    background: var(--background);
+    color: var(--text);
+}
+
+.parent {
+    width: 500px;
+    height: 500px;
+    border: 4px dashed #fff;
+    font-size: 50px;
+    /*position: relative;*/
+    display: grid;
+    background: #222;
+
+}
+
+.child {
+    margin: auto;
+    /*display: flex;*/
+    /*justify-content: center;*/
+    /*align-items: center;*/
+    /*height: 100%;*/
+    /*font-size: 70px;*/
+    /*position: absolute;*/
+    /*left: 50%;*/
+    /*top: 50%;*/
+    /*transform: translate(-50%, -50%);*/
+}
+
+
+

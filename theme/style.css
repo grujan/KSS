@@ -1,0 +1,128 @@
+:root {
+    --background: #2196f3;
+    --text: #000;
+    --navbar: #f06;
+    --navbar-text: #fff;
+}
+
+html, body {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    height: 90px;
+    overflow: hidden;
+    display: flex;
+    background: var(--navbar);
+    color: var(--navbar-text);
+}
+
+/*html[data-theme=light] {*/
+/*    background: var(--background);*/
+/*    color: var(--text);*/
+/*}*/
+
+/*input:is(input[type=checkbox]:checked) ~ *{*/
+/*    --background: red;*/
+/*    --text: yellow;*/
+/*}*/
+
+header:has(input[type=checkbox]:checked) ~ * {
+    --background: #f06;
+    --text: yellow;
+    --navbar: #2196f3;
+    --navbar-text: #000;
+    background: var(--navbar);
+}
+
+header:has(button[data-toggle]:focus) ~ * {
+    --background: #f06;
+    --text: yellow;
+    --navbar: #2196f3;
+    --navbar-text: #000;
+}
+
+header nav {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+h1, p {
+    margin: 0;
+}
+header nav div {
+    margin: auto;
+}
+
+button {
+    margin-right: 20px;
+    border: none;
+    border-radius: 12px;
+    padding: 12px 20px;
+    color: #fff;
+    min-width: 80px;
+    background: var(--background);
+}
+
+button span {
+    display: none;
+}
+
+button, button:after {
+    cursor: pointer;
+    content: 'Light';
+}
+
+button:focus:after {
+    content: 'Dark';
+}
+
+#toggle {
+    display: none;
+}
+
+label {
+    display: inline-block;;
+    width: 70px;
+    height: 40px;
+    background-color: #000;
+    border-radius: 20px;
+    position: relative;
+    cursor: pointer;
+    margin-left: 32px;
+}
+
+label::before {
+    content: "🌞";
+    text-align: center;
+    font-size: 25px;
+    position: absolute;
+    top: 2px;
+    left: 5px;
+    width: 30px;
+    height: 30px;
+    color: #000;
+    /*background-color: #000;*/
+    border-radius: 50%;
+    transition: transform 0.3s;
+}
+
+#toggle:checked + label {
+    background-color: #2196F3;
+}
+
+#toggle:checked + label::before {
+    content: "🌙";
+    transform: translateX(30px);
+}
+
+#content {
+    background: var(--background);
+    color: var(--text);
+    height: calc(100vh - 20px);
+}

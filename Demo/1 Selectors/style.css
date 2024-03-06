@@ -1,0 +1,40 @@
+.parent > .child {
+    background: blue;
+}
+
+.parent .descendant {
+    /*color: green;*/
+}
+
+.descendant span ~ span {
+    color: purple;
+    font-weight: bold;
+}
+
+div[title="attribute-example"] {
+    font-style: italic;
+}
+
+.not-selected .item-selected {
+    margin-bottom: 20px;
+}
+
+.not-selected .item-selected:not(.select) {
+    background: #2144f3;
+}
+
+.not-selected .item-selected:nth-child(2) {
+    background: green;
+}
+
+.container div:first-child{
+    background: red;
+}
+
+.container div:last-child{
+    background: yellow;
+}
+
+.container div:nth-child(2) {
+    background: blue;
+}
